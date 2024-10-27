@@ -1,8 +1,10 @@
-import { Tabs } from "expo-router";
+import { Stack, Tabs } from "expo-router";
 
 import { TabBarIcon } from "@/components/navigation/TabBarIcon";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
+
+const currentUser = { user: 100, userName: "Uğur", icon: "flash" };
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
